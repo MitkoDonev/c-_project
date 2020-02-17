@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="Project.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel Padding="50" Background="DarkBlue">
+        <TextBlock Text="Password Encryption" FontSize="62" TextDecorations="Underline" />
+        <TextBlock Text="Enter word to encrypt:" FontSize="42" />
+        <TextBox x:Name="Word" />
+        <TextBlock Text="Encrypted" FontSize="42" />
+        <TextBox x:Name="Encrypted" />
+        <TextBlock Text="Decrypted" FontSize="42" />
+        <TextBox x:Name="Decrypted" />
+        <TextBlock Text="Converted" FontSize="42" />
+        <TextBox x:Name="Converted" />
+        <Button Content="Encrypt word" Click="EncryptButtom" Width="105" Background="Yellow" BorderBrush="Black" Margin="3"/>
+        <Button Content="Decrypt word" Click="DecryptButtom" Width="105" Background="Red" BorderBrush="Black" Margin="3"/>
+        <Button Content="Convert" Click="Convert" Width="105" Background="Green" BorderBrush="Black" Margin="3"/>
+
+    </StackPanel>
+</Page>
